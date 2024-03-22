@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <title>Decodificador</title>
+</head>
+<body>
+    
+        <header>
+            <div class="div-header">
+            <img class="img-header" src="./assets/Frame 6.svg" alt="logo da alura">
+            </div>
+        </header>
+
+        <main>
+            <div class="div-input">
+                <label nome=""></label>
+                <textarea rows="40" cols="50" type="text" class="text"  nome="text" placeholder="Digite seu texto" ></textarea>
+            </div>
+           
+            <div class="div-container-botoes">
+               <div class="div-container-botoes-alerta"><span><img src="./assets/Group.svg">Apenas letras minúsculas e sem acento</span></div>
+                <div class="div-botoes"> 
+                <button class="btn btn1">Criptografar</button>
+                <button class="btn btn2">Descriptografar</button>
+                </div>
+            </div>
+
+        </main>
+
+        <aside class="lateral">
+            <div class="div-text-area start">
+                <img src="./assets/High quality products 1 1.svg">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <div class="div-text-area result" id="hidden">
+               <textarea class="saidaDeTexto" readonly></textarea>
+
+                <button onclick="copiarTexto()" class="btn btn-result">Copiar</button>
+
+            </div>
+        </aside>
+
+        <footer>
+
+        </footer>
+        <script src="./scripts/script.js" defer></script>
+</body>
+</html>
